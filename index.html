@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+</head>
+
+</head>
+<body>
+
+    <div class="background-container">
+        <img src="fon1.png" alt="">
+    </div>
+
+    <header>
+        <div class="logo-nav-container">
+            <div class="logo">
+                <img src="comfy.png" alt="Logo">
+            </div>
+            <div class="city" id="cityElement">
+                <span id="selectedCity">Київ</span>
+                <span class="citty">&#8964;</span>
+                <ul class="options">
+                    <li onclick="updateName(this)">Ірпінь</li>
+                    <li onclick="updateName(this)">Бориспіль</li>
+                    <li onclick="updateName(this)">Бровари</li>
+                    <li onclick="updateName(this)">Київ</li>
+                    <li onclick="updateName(this)">Буча</li>
+                    <li onclick="updateName(this)">Фастів</li>
+                    <li onclick="updateName(this)">Славутич</li>
+                    <li onclick="updateName(this)">Обухів</li>
+                    <li onclick="updateName(this)">Ржищів</li>
+                    <li onclick="updateName(this)">Вишгород</li>
+                    <li onclick="updateName(this)">Васильків</li>
+                </ul>
+               
+            </div>
+            
+<script>
+  function updateName(selectedOption) {
+      var selectedCityElement = document.getElementById("selectedCity");
+      var selectedCityName = selectedOption.textContent;
+      selectedCityElement.textContent = selectedCityName;
+  }
+
+  var cityElement = document.getElementById("cityElement");
+  var optionsElement = document.querySelector(".options");
+
+  cityElement.addEventListener("click", function() {
+      // Toggle the visibility of the options when the city element is clicked
+      optionsElement.style.display = (optionsElement.style.display === "block") ? "none" : "block";
+  });
+</script>
+           
+            <a href=""></a>
+            <div class="nav">
+                <ul>
+                    <li><button class="akc-button">Акції</button></li>
+                    <a href=""> <li>Подарункові карти</li> </a>
+                    <a href=""> <li>Магазини</li> </a>
+                
+                    <a href=""> 
+                        <li class="">
+                            Ще
+                            <span class="citty2">&#8964;</span>
+                            <ul class="submenu">
+                                <li>Знайти замовлення</li>
+                                <li>Умови доставки</li>
+                                <li>Обмін і повернення товару</li>
+                                <li>Гарантія</li>
+                                <li>Статус товару в ремонті</li>
+                                <li>Часто задавані питання</li>
+                                <li>Правила користування сайтом</li>
+                                <li>Правила участі в акціях</li>
+                                <li>Чорна п'ятниця 2023</li>
+                            </ul>
+                        </li>
+                    </a>
+                 
+                </ul>
+            </div>
+            <a href="" class="help">
+                <img src="phone.png" alt="" class="phone-icon">
+                <span style="color: tomato;">Допомога</span>
+                <span class="span2">&#8964;</span>
+                <ul class="help-submenu">
+                    <li><img src="tell.png" alt=""> Чат на сайті</li>
+                    <li><img src="telegram.png" alt=""> Telegram</li>
+                    <li><img src="viber.png" alt=""> Viber</li>
+                    <li><img src="messenger.png" alt=""> Messenger</li>
+                </ul>
+            </a>
+         
+           
+             
+             
+            
+    </header>
+  
+
+    <main>
+
+        <section class="carousel-container">
+            <div class="owl-carousel">
+                <div class="item"><img src="carousel_image1.png" alt=""></div>
+                <div class="item"><img src="carousel_image2.png" alt=""></div>
+                <div class="item"><img src="carousel_image3.png" alt=""></div>
+                <div class="item"><img src="carousel_image4.png" alt=""></div>
+                <div class="item"><img src="carousel-image5.png" alt=""></div>
+                <div class="item"><img src="carousel_image6.png" alt=""></div>
+                <div class="item"><img src="carousel_image7.png" alt=""></div>
+                <div class="item"><img src="carousel_image8.png" alt=""></div>
+                <div class="item"><img src="carousel_image9.png" alt=""></div>
+                <div class="item"><img src="carousel_image10.png" alt=""></div>
+            </div>
+        </section>
+        
+
+      
+    <section class="cards">
+        <div class="container container__cards">
+            <div class="card">
+           
+            <div class="card__top">
+            
+              <a href="#" class="card__image">
+                <img
+                  src="phone1.png"
+                  alt=""
+                />
+              </a>
+           
+              <div class="card__label">-10%</div>
+            </div>
+            
+            <div class="card__bottom">
+              
+              <div class="card__prices">
+                <div class="card__price card__price--discount">9999</div>
+                <div class="card__price card__price--common">11999</div>
+              </div>
+              
+              <a href="#" class="card__title">
+                Смартфон Xiaomi Redmi Note 12 Pro 8/256Gb Graphite Gray
+              </a>
+      
+              <button class="card__add">В корзину</button>
+            </div>
+            </div>
+            <div class="card">
+              
+              <div class="card__top">
+                
+                <a href="#" class="card__image">
+                  <img
+                    src="phone 2.png"
+                    alt=""
+                  />
+                </a>
+               
+                <div class="card__label">-6%</div>
+              </div>
+            
+              <div class="card__bottom">
+                
+                <div class="card__prices">
+                  <div class="card__price card__price--discount">31999</div>
+                  <div class="card__price card__price--common">33999</div>
+                </div>
+              
+                <a href="#" class="card__title">
+                  Смартфон Apple iPhone 13 PRO MAX   128Gb Midnight
+                </a>
+            
+                <button class="card__add">В корзину</button>
+              </div>
+              </div> <div class="card">
+                
+                <div class="card__top">
+                
+                  <a href="#" class="card__image">
+                    <img
+                      src="phone3.png"
+                      alt=""
+                    />
+                  </a>
+                 
+                  <div class="card__label">-48%</div>
+                </div>
+              
+                <div class="card__bottom">
+                 
+                  <div class="card__prices">
+                    <div class="card__price card__price--discount">12888</div>
+                    <div class="card__price card__price--common">24999</div>
+                  </div>
+                 
+                  <a href="#" class="card__title">
+                    Робот-пилосос миючий Rowenta RR8577WH Graphite white
+                  </a>
+                  
+                  <button class="card__add">В корзину</button>
+                </div>
+                </div> <div class="card">
+                
+                  <div class="card__top">
+                    
+                    <a href="#" class="card__image">
+                      <img
+                        src="phone4.png"
+                        alt=""
+                      />
+                    </a>
+                   
+                    <div class="card__label">-20%</div>
+                  </div>
+                
+                  <div class="card__bottom">
+              
+                    <div class="card__prices">
+                      <div class="card__price card__price--discount">1799</div>
+                      <div class="card__price card__price--common">1299</div>
+                    </div>
+                    
+                    <a href="#" class="card__title">
+                      Навушники вкладиші бездротові TWS Xiaomi Redmi Buds 4 Lite  White
+                    </a>
+                    <!-- Кнопка добавить в корзину -->
+                    <button class="card__add">В корзину</button>
+                  </div>
+                  </div>
+            <div class="card">
+                <!-- Верхняя часть -->
+                <div class="card__top">
+                  <!-- Изображение-ссылка товара -->
+                  <a href="#" class="card__image">
+                    <img
+                      src="phone5.png"
+                      alt=""
+                    />
+                  </a>
+                  <!-- Скидка на товар -->
+                  <div class="card__label">-7%</div>
+                </div>
+                <!-- Нижняя часть -->
+                <div class="card__bottom">
+                  <!-- Цены на товар (с учетом скидки и без)-->
+                  <div class="card__prices">
+                    <div class="card__price card__price--discount">8799</div>
+                    <div class="card__price card__price--common">9499</div>
+                  </div>
+                  <!-- Ссылка-название товара -->
+                  <a href="#" class="card__title">
+                    Смартфон Samsung Galaxy A24 6/128Gb Black (SM-A245FZKVSEK)
+                  </a>
+                  <!-- Кнопка добавить в корзину -->
+                  <button class="card__add">В корзину</button>
+                </div>
+                </div>
+                <div class="card">
+                    <!-- Верхняя часть -->
+                    <div class="card__top">
+                      <!-- Изображение-ссылка товара -->
+                      <a href="#" class="card__image">
+                        <img
+                          src="phone6.png"
+                          alt=""
+                        />
+                      </a>
+                      <!-- Скидка на товар -->
+                      <div class="card__label">-13%</div>
+                    </div>
+                    <!-- Нижняя часть -->
+                    <div class="card__bottom">
+                      <!-- Цены на товар (с учетом скидки и без)-->
+                      <div class="card__prices">
+                        <div class="card__price card__price--discount">17999</div>
+                        <div class="card__price card__price--common">20790</div>
+                      </div>
+                      <!-- Ссылка-название товара -->
+                      <a href="#" class="card__title">
+                        Посудомийна машина вбудована Whirlpool WIC 3C33 PFE
+                      </a>
+                      <!-- Кнопка добавить в корзину -->
+                      <button class="card__add">В корзину</button>
+                    </div>
+                    </div>
+                    <div class="card">
+                        <!-- Верхняя часть -->
+                        <div class="card__top">
+                          <!-- Изображение-ссылка товара -->
+                          <a href="#" class="card__image">
+                            <img
+                              src="phone7.png"
+                              alt=""
+                            />
+                          </a>
+                          <!-- Скидка на товар -->
+                          <div class="card__label">-28%</div>
+                        </div>
+                        <!-- Нижняя часть -->
+                        <div class="card__bottom">
+                          <!-- Цены на товар (с учетом скидки и без)-->
+                          <div class="card__prices">
+                            <div class="card__price card__price--discount">25999</div>
+                            <div class="card__price card__price--common">35999</div>
+                          </div>
+                          <!-- Ссылка-название товара -->
+                          <a href="#" class="card__title">
+                            Ноутбук ігровий Lenovo IdeaPad Gaming 3 15ACH6  Shadow Black
+                          </a>
+                          <!-- Кнопка добавить в корзину -->
+                          <button class="card__add">В корзину</button>
+                        </div>
+                        </div>
+                        <div class="card">
+                            <!-- Верхняя часть -->
+                            <div class="card__top">
+                              <!-- Изображение-ссылка товара -->
+                              <a href="#" class="card__image">
+                                <img
+                                  src="phone8.png"
+                                  alt=""
+                                />
+                              </a>
+                              <!-- Скидка на товар -->
+                              <div class="card__label">-14%</div>
+                            </div>
+                            <!-- Нижняя часть -->
+                            <div class="card__bottom">
+                              <!-- Цены на товар (с учетом скидки и без)-->
+                              <div class="card__prices">
+                                <div class="card__price card__price--discount">18499</div>
+                                <div class="card__price card__price--common">21499</div>
+                              </div>
+                              <!-- Ссылка-название товара -->
+                              <a href="#" class="card__title">
+                                Телевізор Samsung UE50CU7100UXUDADUA BLACK                              </a>
+                              <!-- Кнопка добавить в корзину -->
+                              <button class="card__add">В корзину</button>
+                            </div>
+                            </div>
+                            <div class="card">
+                                <!-- Верхняя часть -->
+                                <div class="card__top">
+                                  <!-- Изображение-ссылка товара -->
+                                  <a href="#" class="card__image">
+                                    <img
+                                      src="phone9.png"
+                                      alt=""
+                                    />
+                                  </a>
+                                  <!-- Скидка на товар -->
+                                  <div class="card__label">-42%</div>
+                                </div>
+                                <!-- Нижняя часть -->
+                                <div class="card__bottom">
+                                  <!-- Цены на товар (с учетом скидки и без)-->
+                                  <div class="card__prices">
+                                    <div class="card__price card__price--discount">14999</div>
+                                    <div class="card__price card__price--common">25999</div>
+                                  </div>
+                                  <!-- Ссылка-название товара -->
+                                  <a href="#" class="card__title">
+                                    Пилосос ручний для дому Rowenta RH99C0WO Blue
+                                  </a>
+                                  <!-- Кнопка добавить в корзину -->
+                                  <button class="card__add">В корзину</button>
+                                </div>
+                                </div>
+                                <div class="card">
+                                    <!-- Верхняя часть -->
+                                    <div class="card__top">
+                                      <!-- Изображение-ссылка товара -->
+                                      <a href="#" class="card__image">
+                                        <img
+                                          src="phone10.png"
+                                          alt=""
+                                        />
+                                      </a>
+                                      <!-- Скидка на товар -->
+                                      <div class="card__label">-48%</div>
+                                    </div>
+                                    <!-- Нижняя часть -->
+                                    <div class="card__bottom">
+                                      <!-- Цены на товар (с учетом скидки и без)-->
+                                      <div class="card__prices">
+                                        <div class="card__price card__price--discount">16999</div>
+                                        <div class="card__price card__price--common">32999</div>
+                                      </div>
+                                      <!-- Ссылка-название товара -->
+                                      <a href="#" class="card__title">
+                                        Кавомашина Delonghi ICY ECAM290.51.B.2 Graphite Gray
+                                      </a>
+                                      <!-- Кнопка добавить в корзину -->
+                                      <button class="card__add">В корзину</button>
+                                    </div>
+                                    </div>
+                                    <div class="card">
+                                        <!-- Верхняя часть -->
+                                        <div class="card__top">
+                                          <!-- Изображение-ссылка товара -->
+                                          <a href="#" class="card__image">
+                                            <img
+                                              src="phone11.png"
+                                              alt=""
+                                            />
+                                          </a>
+                                          <!-- Скидка на товар -->
+                                          <div class="card__label">-28%</div>
+                                        </div>
+                                        <!-- Нижняя часть -->
+                                        <div class="card__bottom">
+                                          <!-- Цены на товар (с учетом скидки и без)-->
+                                          <div class="card__prices">
+                                            <div class="card__price card__price--discount">25999</div>
+                                            <div class="card__price card__price--common">35999</div>
+                                          </div>
+                                          <!-- Ссылка-название товара -->
+                                          <a href="#" class="card__title">
+                                            Системний блок Expert PC Ultimate (A3600.16.S10.3050.A6100)
+                                          </a>
+                                          <!-- Кнопка добавить в корзину -->
+                                          <button class="card__add">В корзину</button>
+                                        </div>
+                                        </div>
+                                        <div class="card">
+                                            <!-- Верхняя часть -->
+                                            <div class="card__top">
+                                              <!-- Изображение-ссылка товара -->
+                                              <a href="#" class="card__image">
+                                                <img
+                                                  src="phone12.png"
+                                                  alt=""
+                                                />
+                                              </a>
+                                              <!-- Скидка на товар -->
+                                              <div class="card__label">-16%</div>
+                                            </div>
+                                            <!-- Нижняя часть -->
+                                            <div class="card__bottom">
+                                              <!-- Цены на товар (с учетом скидки и без)-->
+                                              <div class="card__prices">
+                                                <div class="card__price card__price--discount">18999</div>
+                                                <div class="card__price card__price--common">22699</div>
+                                              </div>
+                                              <!-- Ссылка-название товара -->
+                                              <a href="#" class="card__title">
+                                                Ігрова приставка PlayStation 5 (LS24AG5424PIXCI)
+                                              </a>
+                                              <!-- Кнопка добавить в корзину -->
+                                              <button class="card__add">В корзину</button>
+                                            </div>
+                                            </div>
+        </div>
+    </section>
+          
+    </main>
+   
+  <footer style="background-color: white; border-top: 1px solid #ddd; padding: 20px 0;">
+    <div style="float: left; width: 33.33%;">
+        <h4>COMFY</h4>
+        <ul>
+            <li><a href="#">Про компанію</a></li>
+            <li><a href="#">Магазини</a></li>
+            <li><a href="#">Контакти</a></li>
+            <li><a href="#">Прес-центр</a></li>
+            <li><a href="#">Робота в COMFY</a></li>
+        </ul>
+    </div>
+    <div style="float: left; width: 33.33%;">
+        <h4>COMFY допомагає</h4>
+        <ul>
+            <li><a href="#">Послуги і сервіси</a></li>
+            <li><a href="#">Бонусна програма</a></li>
+            <li><a href="#">Подарункові картки</a></li>
+            <li><a href="#">COMFY книги</a></li>
+            <li><a href="#">Кредит і оплата частинами</a></li>
+            <li><a href="#">Trade In</a></li>
+            <li><a href="#">Сервісні договори</a></li>
+            <li><a href="#">Безготівковий рахунок</a></li>
+        </ul>
+    </div>
+    <div style="float: left; width: 33.33%;">
+        <h4>Допомога покупцеві</h4>
+        <ul>
+            <li><a href="#">Центр допомоги клієнтам</a></li>
+            <li><a href="#">Знайти замовлення</a></li>
+            <li><a href="#">Умови доставки</a></li>
+            <li><a href="#">Обмін і повернення товару</a></li>
+            <li><a href="#">Гарантія</a></li>
+            <li><a href="#">Статус товару в ремонті</a></li>
+            <li><a href="#">Правила користування сайтом</a></li>
+            <li><a href="#">Правила участі в акціях</a></li>
+        </ul>
+    </div>
+    <footer="background-color: white; border-top: 1px solid #ddd; padding: 20px 0;></footer>
+    <div style="float: left;">© Всі права захищені ТОВ «КОМФІ ТРЕЙД», 2010–2023</div>
+    <div style="float: right;">
+        <!-- Add your text links for social media -->
+        <a href="#" style="margin-right: 10px;"><img src="facebook-circle-fill.png" alt=""></a>
+        <a href="#" style="margin-right: 10px;"><img src="telegram-fill.png" alt=""></a>
+        <a href="#" style="margin-right: 10px;"><img src="instagram-fill.png" alt=""></a>
+        <a href="#" style="margin-right: 10px;"><img src="youtube-fill.png" alt=""></a>
+        <a href="#" style="margin-right: 10px;"><img src="twitter-fill.png" alt=""></a>
+    </div>
+</footer>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".owl-carousel").owlCarousel({
+                loop: true,
+                margin: 10,
+                autoplay: true,
+                autoplayTimeout: 3000,
+                responsive:{
+                    0:{
+                        items: 1
+                    },
+                    600:{
+                        items: 3
+                    },
+                    1000:{
+                        items: 5
+                    },
+                    1200:{
+                        items: 10
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+</html>

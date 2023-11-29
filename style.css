@@ -1,0 +1,505 @@
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    min-width: 320px; /* Виправив помилку, додавши "px" */
+    overflow: auto; /* або можна видалити цю строку, якщо не потрібно обмеження прокрутки */
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+.background-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.background-container img {
+    width: 80%;
+}
+
+.logo-nav-container {
+    display: flex;
+    align-items: center;
+    padding: 20px 40px 0;
+    justify-content: space-between;
+    z-index: 1;
+}
+
+.logo {
+    position: relative;
+    left: 180px;
+}
+
+.nav ul {
+    list-style: none;
+    display: flex;
+}
+
+.nav li {
+    margin-right: 30px;
+    position: relative;
+}
+
+.city {
+    position: relative;
+    cursor: pointer;
+    right: 60px;
+}
+
+.city #selectedCity {
+    display: inline-block;
+    padding: 10px;
+}
+
+.city .options {
+    list-style: none;
+    padding: 0;
+    background: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: none;
+    z-index: 2;
+    position: absolute;
+    right: 0;
+    top: 40px;
+    width: 200px;
+    box-sizing: border-box;
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+.city .options li {
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+    cursor: pointer;
+    white-space: normal;
+}
+
+.city:hover .options {
+    display: block;
+}
+.nav{
+    position: relative;
+    top:5px;
+}
+.akc-button {
+    background-color: rgb(255, 25, 25);
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 55px;
+    cursor: pointer;
+    font-size: 16px;
+    
+
+}
+
+.another-city {
+    position: relative;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+.nav > ul {
+    display: flex;
+    align-items: center;
+    
+}
+
+.phone-icon {
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.span2 {
+    color: tomato;
+    margin-left: 5px;
+    position: relative;
+    top: -5px;
+}
+
+.nav a:hover {
+    color: green;
+    text-decoration: none;
+}
+
+.nav li {
+    margin-right: 30px;
+    display: inline;
+}
+
+.nav ul ul {
+    display: none;
+    position: absolute;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.nav ul ul li {
+    display: block;
+}
+
+.nav li:hover > ul {
+    display: block;
+}
+
+.help a {
+    color: tomato;
+    text-decoration: none;
+}
+
+.nav a {
+    color: black;
+    text-decoration: none;
+}
+
+.nav li {
+    margin-right: 30px;
+    display: inline;
+    position: relative;
+}
+
+.nav ul ul {
+    display: none;
+    position: absolute;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.nav ul ul li {
+    display: block;
+}
+
+.nav li:hover > ul {
+    display: block;
+}
+
+.help a {
+    color: tomato;
+    text-decoration: none;
+}
+
+.languages button {
+    margin-left: 10px;
+}
+
+.city .citty {
+    color: black;
+    position: relative;
+    top: -5px;
+    right: 7px;
+}
+
+.vl {
+    border-left: 1px solid rgb(207, 203, 203);
+    height: 25px;
+    position: relative;
+    right: 10px;
+}
+
+.vl2 {
+    border-left: 1px solid rgb(207, 203, 203);
+    height: 25px;
+    position: relative;
+    right: 15px;
+}
+
+.vl3 {
+    border-left: 1px solid rgb(207, 203, 203);
+    height: 25px;
+    position: relative;
+    right: 95px;
+}
+
+.citty2 {
+    position: relative;
+    top: -5px;
+}
+
+.help {
+    position: relative;
+    right: 250px;
+    
+    text-decoration: none;
+}
+
+.ukr,
+.eng {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.ukr {
+    background-color: rgb(102, 239, 102);
+    color: white;
+}
+
+.eng {
+    color: rgb(174, 173, 173);
+}
+
+.languages {
+    position: relative;
+    right: 250px;
+    top: -8px;
+}
+
+header {
+    position: relative;
+    left: 20px;
+    top: -8px;
+}
+
+.submenu,
+.help-submenu {
+    list-style: none;
+    padding: 0;
+    background: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: none;
+    z-index: 2;
+    position: absolute;
+    width: 200px;
+    box-sizing: border-box;
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+.city .options,
+.submenu,
+.help-submenu {
+    left: 10px;
+    top: 35px;
+}
+
+.submenu li,
+.help-submenu li {
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+    cursor: pointer;
+    white-space: normal;
+}
+
+.city .options li:hover,
+.submenu li:hover,
+.help-submenu li:hover {
+    background-color: #f0f0f0;
+}
+
+.city:hover .options,
+.nav li:hover .submenu,
+.help:hover .help-submenu {
+    display: block;
+}
+
+.vl,
+.vl2,
+.vl3,
+.vl1 {
+    border-left: 1px solid rgb(207, 203, 203);
+    height: 25px;
+    position: relative;
+}
+
+.img-user {
+    display: flex;
+    position: relative;
+    right: 30px;
+}
+
+.carousel-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 3px solid green;
+    border-radius: 10px;
+}
+
+.card {
+    width: 225px;
+    min-height: 350px;
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column; /* Размещаем элементы в колонку */
+    border-radius: 4px;
+    transition: 0.2s;
+    position: relative;
+    transition: 0.2s;
+
+  }
+  
+  .card:hover {
+    box-shadow: 4px 8px 16px rgba(255, 102, 51, 0.2);
+  }
+  
+  .card__top {
+    flex: 0 0 260px; 
+    position: relative;
+    overflow: hidden;
+   
+  }
+  
+  
+  .card__image {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .card__image > img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* Встраиваем картинку в контейнер card__image */
+    transition: 0.2s;
+  }
+  
+  /* При наведении - увеличиваем картинку */
+  .card__image:hover > img {
+    transform: scale(1.1);
+  }
+  
+  /* Размещаем скидку на товар относительно изображения */
+  .card__label {
+    padding: 4px 8px;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background: #ff6633;
+    border-radius: 4px;
+    font-weight: 400;
+    font-size: 16px;
+    color: #fff;
+  }
+  
+  .card__bottom {
+    
+    flex: 1 0 auto; /* Занимаем всю оставшуюся высоту карточки */
+    padding: 10px;
+  }
+  
+  .card__prices {
+    display: flex;
+    margin-bottom: 10px;
+    flex: 0 0 50%; /* Размещаем цены равномерно в две колонки */
+  }
+  
+  .card__price::after {
+    content: "₴";
+    margin-left: 4px;
+    position: relative;
+  }
+  
+  .card__price--discount {
+    font-weight: 700;
+    font-size: 19px;
+    color: #414141;
+    display: flex;
+    flex-wrap: wrap-reverse;
+  }
+  
+  .card__price--discount::before {
+    content: "Зі знижкою";
+    font-weight: 400;
+    font-size: 13px;
+    color: #bfbfbf;
+  }
+  
+  .card__price--common {
+    font-weight: 400;
+    font-size: 17px;
+    color: #606060;
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: flex-end;
+  }
+  
+  .card__price--common::before {
+    content: "Звичайна";
+    font-weight: 400;
+    font-size: 13px;
+    color: #bfbfbf;
+  }
+  
+  .card__title {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 150%;
+    color: #414141;
+  }
+  
+  .card__title:hover {
+    color: #ff6633;
+  }
+  
+  .card__add {
+    display: block;
+    width: 100%;
+    font-weight: 400;
+    font-size: 17px;
+    color: #70c05b;
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #70c05b;
+    border-radius: 4px;
+    cursor: pointer; /* Меняем курсор при наведении */
+    transition: 0.2s;
+    margin-top: auto; /* Прижимаем кнопку к низу карточки */
+  }
+  
+  .card__add:hover {
+    border: 1px solid #ff6633;
+    background-color: #ff6633;
+    color: #fff;
+  }
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    padding: 15px 15px;
+    margin: 0 auto;
+}
+
+.container__cards {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(auto-fill, 225px);
+    justify-content: center;
+    justify-items: center;
+    margin: 0 auto;
+    column-gap: 30px;
+    row-gap: 40px;
+}
+
+.card__btn {
+    display: block;
+  width: 100%;
+  font-weight: 400;
+  font-size: 17px;
+  color: #70c05b;
+  padding: 10px;
+  text-align: center;
+  border: 1px solid #70c05b;
+  border-radius: 4px;
+  cursor: pointer; /* Меняем курсор при наведении */
+  transition: 0.2s;
+  margin-top: auto; /* Прижимаем кнопку к низу карточки */
+}
